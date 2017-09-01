@@ -1,10 +1,23 @@
+.wrapper {
+  padding: 40px;
+}
+  .wrapper__header {
+    padding: 0 40px;
+  }
+  @media (min-width: 530px){
+  .wrapper__header {
+        padding: 0 20px;
+  }
+  }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #333;
 }
 
@@ -12,3 +25,41 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.siteHeader {
+  overflow: hidden;
+}
+
+.siteHeader__logo h1{
+    font-weight: 100;
+    font-size: 1rem;
+    color: #666;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+  }
+
+@media (min-width: 530px){
+
+.siteHeader__logo h1{
+      font-size: 1.25rem;
+  }
+  }
+
+.siteHeader__hamburgerMenu{
+    float: right;
+  }
+
+.siteHeader__hamburgerBar {
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: #666;
+  }
+
+@media (min-width: 880px){
+
+.siteHeader__hamburgerBar {
+      display: none;
+  }
+  }

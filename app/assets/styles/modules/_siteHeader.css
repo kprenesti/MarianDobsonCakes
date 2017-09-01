@@ -1,0 +1,26 @@
+.siteHeader {
+  overflow: hidden;
+  &__logo h1{
+    font-weight: $thin;
+    @mixin atSmall{
+      font-size: 1.25rem;
+    }
+    font-size: 1rem;
+    color: $lightGrey;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  &__hamburgerMenu{
+    float: right;
+  }
+  &__hamburgerBar {
+    @mixin atMedium {
+      display: none;
+    }
+    display: block;
+    width: 15px;
+    height: 2px;
+    background-color: $lightGrey;
+  }
+}

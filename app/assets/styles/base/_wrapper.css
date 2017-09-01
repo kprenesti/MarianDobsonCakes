@@ -1,0 +1,9 @@
+.wrapper {
+  padding: 40px;
+  &__header {
+    @mixin atSmall{
+        padding: 0 20px;  
+    }
+    padding: 0 40px;
+  }
+}
